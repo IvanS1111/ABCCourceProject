@@ -51,7 +51,7 @@ protected:
 
                 write_data.put("type", "Record");
                 write_data.put("id", instr.get_sequence_id());
-                write_data.add("disassembly", instr.get_disasm());
+                write_data.add("disassembly", instr.get_mask());
 
                 json_record[instr.get_sequence_id()] = write_data;
             }

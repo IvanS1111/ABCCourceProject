@@ -3,7 +3,7 @@
         {
             "type": "Record",
             "id": "0",
-            "disassembly": "c_addi $zero, 16",
+            "disassembly": "18446744073709551615",
             "stages": [
                 {
                     "cycle": "32",
@@ -26,7 +26,7 @@
         {
             "type": "Record",
             "id": "1",
-            "disassembly": "c_addi4spn $a1, $sp, 68",
+            "disassembly": "18446744073709551615",
             "stages": [
                 {
                     "cycle": "33",
@@ -49,7 +49,7 @@
         {
             "type": "Record",
             "id": "2",
-            "disassembly": "c_addi4spn $s1, $sp, 0",
+            "disassembly": "18446744073709551615",
             "stages": [
                 {
                     "cycle": "34",
@@ -68,7 +68,7 @@
         {
             "type": "Record",
             "id": "3",
-            "disassembly": "unknown",
+            "disassembly": "18446744073709551615",
             "stages": [
                 {
                     "cycle": "35",

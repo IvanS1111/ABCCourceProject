@@ -10,38 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9299e10-dc08-4c13-a595-636901edaf17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/mipt-mips.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_12_20__13_26__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.ninja_deps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.ninja_log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Elf/Hello_world.elf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.ninja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rules.ninja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulator/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulator/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulator/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulator/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulator/cmake-build-debug/mipt-mips.cbp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulator/elfio/src/elfio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulator/elfio/src/elfio-stamp/elfio-gitclone-lastrun.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulator/elfio/src/elfio-stamp/elfio-gitinfo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulator/elfio/tmp/elfio-cfgcmd.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulator/elfio/tmp/elfio-cfgcmd.txt.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulator/elfio/tmp/elfio-gitclone.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulator/elfio/tmp/elfio-gitupdate.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/infra/config/main_wrapper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/infra/config/main_wrapper.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/infra/ports/module.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/infra/ports/module.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simulator/infra/ports/module.h" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/infra/ports/module.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/modules/branch/branch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/modules/branch/branch.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/modules/decode/decode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/modules/decode/decode.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/modules/execute/execute.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/modules/execute/execute.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/modules/fetch/fetch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/modules/fetch/fetch.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/modules/mem/mem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/modules/mem/mem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/modules/writeback/writeback.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/modules/writeback/writeback.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +60,8 @@
       <workItem from="1608190350265" duration="159000" />
       <workItem from="1608195518077" duration="164000" />
       <workItem from="1608197708421" duration="418000" />
-      <workItem from="1608199419461" duration="1225000" />
+      <workItem from="1608199419461" duration="1818000" />
+      <workItem from="1608204860555" duration="146000" />
     </task>
     <servers />
   </component>
