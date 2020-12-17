@@ -90,6 +90,8 @@ void Execute<FuncInstr>::clock( Cycle cycle)
 
     auto instr = rp_datapath->read( cycle);
 
+    recordStage(instr, "Execute", cycle);
+
     auto src_index = 0;
     for ( auto& bypass_source : rps_bypass)
     {

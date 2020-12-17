@@ -184,6 +184,8 @@ void Fetch<FuncInstr>::clock( Cycle cycle)
     wp_target->write( instr.get_predicted_target(), cycle);
 
     /* log */
+    //init_record(instr);
+    recordStage(instr, "Fetch", cycle);
     sout << "fetch   cycle " << std::dec << cycle << ": " << instr << " " << bp_info << std::endl;
 
     /* sending to decode */

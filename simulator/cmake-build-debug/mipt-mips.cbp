@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="mipt-mips"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\;CMake Files\elfio\;CMake Files\elfio\tmp\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mipt-v">
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 mipt-v"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cachesim">
+				<Option output="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/cachesim" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTEST_PATH=&quot;/home/ivan/ABC5/mipt-mips/simulator/../tests&quot;"/>
+					<Add option="-DKERNEL_IMAGES=&quot;/home/ivan/ABC5/mipt-mips/simulator/../kernels/&quot;"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/elfio/src/elfio"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../external"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../riscv-opcodes"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 cachesim"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cachesim/fast">
+				<Option output="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/cachesim" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTEST_PATH=&quot;/home/ivan/ABC5/mipt-mips/simulator/../tests&quot;"/>
+					<Add option="-DKERNEL_IMAGES=&quot;/home/ivan/ABC5/mipt-mips/simulator/../kernels/&quot;"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/elfio/src/elfio"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../external"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../riscv-opcodes"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 cachesim/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="unit-tests">
+				<Option output="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/unit-tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTEST_PATH=&quot;/home/ivan/ABC5/mipt-mips/simulator/../tests&quot;"/>
+					<Add option="-DKERNEL_IMAGES=&quot;/home/ivan/ABC5/mipt-mips/simulator/../kernels/&quot;"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/elfio/src/elfio"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../external"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../riscv-opcodes"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 unit-tests"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="unit-tests/fast">
+				<Option output="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/unit-tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTEST_PATH=&quot;/home/ivan/ABC5/mipt-mips/simulator/../tests&quot;"/>
+					<Add option="-DKERNEL_IMAGES=&quot;/home/ivan/ABC5/mipt-mips/simulator/../kernels/&quot;"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/elfio/src/elfio"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../external"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../riscv-opcodes"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 unit-tests/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mipt-mips-src">
+				<Option output="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/mipt-mips-src.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTEST_PATH=&quot;/home/ivan/ABC5/mipt-mips/simulator/../tests&quot;"/>
+					<Add option="-DKERNEL_IMAGES=&quot;/home/ivan/ABC5/mipt-mips/simulator/../kernels/&quot;"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/elfio/src/elfio"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../external"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../riscv-opcodes"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 mipt-mips-src"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mipt-mips-src/fast">
+				<Option output="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/mipt-mips-src.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTEST_PATH=&quot;/home/ivan/ABC5/mipt-mips/simulator/../tests&quot;"/>
+					<Add option="-DKERNEL_IMAGES=&quot;/home/ivan/ABC5/mipt-mips/simulator/../kernels/&quot;"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/elfio/src/elfio"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../external"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../riscv-opcodes"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 mipt-mips-src/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mipt-mips-cen64-intf">
+				<Option output="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/libmipt-mips-cen64-intf.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTEST_PATH=&quot;/home/ivan/ABC5/mipt-mips/simulator/../tests&quot;"/>
+					<Add option="-DKERNEL_IMAGES=&quot;/home/ivan/ABC5/mipt-mips/simulator/../kernels/&quot;"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/elfio/src/elfio"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../external"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../riscv-opcodes"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 mipt-mips-cen64-intf"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mipt-mips-cen64-intf/fast">
+				<Option output="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/libmipt-mips-cen64-intf.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTEST_PATH=&quot;/home/ivan/ABC5/mipt-mips/simulator/../tests&quot;"/>
+					<Add option="-DKERNEL_IMAGES=&quot;/home/ivan/ABC5/mipt-mips/simulator/../kernels/&quot;"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/elfio/src/elfio"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../external"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../riscv-opcodes"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 mipt-mips-cen64-intf/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="elfio">
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 elfio"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mipt-mips">
+				<Option output="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/mipt-mips" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTEST_PATH=&quot;/home/ivan/ABC5/mipt-mips/simulator/../tests&quot;"/>
+					<Add option="-DKERNEL_IMAGES=&quot;/home/ivan/ABC5/mipt-mips/simulator/../kernels/&quot;"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/elfio/src/elfio"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../external"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../riscv-opcodes"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 mipt-mips"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mipt-mips/fast">
+				<Option output="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/mipt-mips" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTEST_PATH=&quot;/home/ivan/ABC5/mipt-mips/simulator/../tests&quot;"/>
+					<Add option="-DKERNEL_IMAGES=&quot;/home/ivan/ABC5/mipt-mips/simulator/../kernels/&quot;"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/elfio/src/elfio"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../external"/>
+					<Add directory="/home/ivan/ABC5/mipt-mips/simulator/../riscv-opcodes"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 mipt-mips/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/export/cache/runner.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/export/cen64/cen64_wrapper.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/export/gdb/gdb_wrapper.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/func_sim/driver/driver.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/func_sim/func_sim.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/func_sim/traps/trap.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/infra/cache/cache_tag_array.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/infra/config/config.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/infra/config/main_wrapper.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/infra/log.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/infra/ports/module.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/infra/ports/ports.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/infra/ports/timing.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/infra/replacement/cache_replacement.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/infra/target.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/kernel/kernel.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/kernel/mars/mars_kernel.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/memory/argv_loader/argv_loader.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/memory/elf/elf_loader.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/memory/hierarchied_memory.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/memory/memory.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/memory/plain_memory.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/mips/mips_driver.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/mips/mips_instr.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/mips/mips_register/mips_register.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/modules/branch/branch.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/modules/core/perf_sim.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/modules/decode/decode.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/modules/execute/execute.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/modules/fetch/bpu/bp_interface.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/modules/fetch/bpu/bpu.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/modules/fetch/fetch.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/modules/mem/mem.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/modules/ports_instance.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/modules/writeback/checker/checker.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/modules/writeback/writeback.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/risc_v/riscv_driver.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/risc_v/riscv_instr.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/risc_v/riscv_register/riscv_register.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/cmake-build-debug/CMakeFiles/mipt-mips-src.dir/simulator.cpp.o">
+			<Option target="cachesim"/>
+			<Option target="unit-tests"/>
+			<Option target="mipt-mips-cen64-intf"/>
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/export/cache/main.cpp">
+			<Option target="cachesim"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/export/cache/runner.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/export/cache/runner.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/export/cache/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/export/catch/catch.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/export/cen64/cen64_intf.cpp">
+			<Option target="mipt-mips-cen64-intf"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/export/cen64/cen64_intf.h">
+			<Option target="mipt-mips-cen64-intf"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/export/cen64/cen64_wrapper.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/export/cen64/cen64_wrapper.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/export/gdb/gdb_wrapper.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/export/gdb/gdb_wrapper.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/export/gdb/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/export/standalone/main.cpp">
+			<Option target="mipt-mips"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/func_sim/driver/driver.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/func_sim/driver/driver.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/func_sim/driver/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/func_sim/func_sim.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/func_sim/func_sim.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/func_sim/rf/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/func_sim/t/alu_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/func_sim/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/func_sim/traps/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/func_sim/traps/trap.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/func_sim/traps/trap.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/cache/cache_tag_array.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/cache/cache_tag_array.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/cache/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/config/config.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/config/config.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/config/main_wrapper.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/config/main_wrapper.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/config/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/instrcache/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/log.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/log.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/ports/module.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/ports/module.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/ports/port_queue/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/ports/ports.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/ports/ports.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/ports/t/example_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/ports/t/topology_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/ports/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/ports/timing.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/ports/timing.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/replacement/cache_replacement.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/replacement/cache_replacement.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/replacement/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/target.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/infra/target.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/kernel/kernel.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/kernel/kernel.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/kernel/mars/mars_kernel.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/kernel/mars/mars_kernel.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/kernel/mars/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/kernel/t/replicant_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/kernel/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/argv_loader/argv_loader.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/argv_loader/argv_loader.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/argv_loader/t/unit_tests.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/cen64/cen64_memory.cpp">
+			<Option target="mipt-mips-cen64-intf"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/cen64/cen64_memory.h">
+			<Option target="mipt-mips-cen64-intf"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/cen64/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/elf/elf_loader.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/elf/elf_loader.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/hierarchied_memory.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/memory.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/memory.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/plain_memory.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/t/check_coherency.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/t/check_coherency.h">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/memory/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/mips_driver.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/mips_instr.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/mips_instr.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/mips_register/mips_register.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/mips_register/mips_register.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/mips_register/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/t/mips32_branch_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/t/mips32_cp1_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/t/mips32_divmult_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/t/mips32_memory_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/t/mips32_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/t/mips32_test.h">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/t/mips32_traps_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/t/mips64_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/mips/t/mips_version_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/branch/branch.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/branch/branch.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/core/perf_sim.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/core/perf_sim.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/core/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/decode/decode.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/decode/decode.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/execute/execute.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/execute/execute.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/fetch/bpu/bp_interface.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/fetch/bpu/bp_interface.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/fetch/bpu/bpu.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/fetch/bpu/bpu.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/fetch/bpu/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/fetch/fetch.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/fetch/fetch.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/mem/mem.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/mem/mem.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/ports_instance.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/ports_instance.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/writeback/checker/checker.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/writeback/checker/checker.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/writeback/writeback.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/modules/writeback/writeback.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/risc_v/riscv_driver.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/risc_v/riscv_instr.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/risc_v/riscv_instr.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/risc_v/riscv_register/riscv_register.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/risc_v/riscv_register/riscv_register.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/risc_v/riscv_register/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/risc_v/t/riscv32_driver_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/risc_v/t/riscv64_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/risc_v/t/unit_test.cpp">
+			<Option target="unit-tests"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/riscv.opcode.gen.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/riscv.opcode.gen.h.rule">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/simulator.cpp">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/simulator.h">
+			<Option target="mipt-mips-src"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/../../../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/../../../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/../../../../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/../../../../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/ivan/ABC5/mipt-mips/simulator/elfio/tmp/elfio-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\elfio\tmp\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

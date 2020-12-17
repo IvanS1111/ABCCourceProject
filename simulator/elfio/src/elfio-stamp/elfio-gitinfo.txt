@@ -1,0 +1,3 @@
+repository='https://github.com/serge1/ELFIO.git'
+module=''
+tag='origin'

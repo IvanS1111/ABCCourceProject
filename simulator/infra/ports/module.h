@@ -11,16 +11,66 @@
 #include <infra/ports/ports.h>
 
 #include <boost/property_tree/ptree_fwd.hpp>
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/json_parser.hpp>
+#include <boost/optional/optional.hpp>
+#include <map>
 
 #include <set>
 #include <unordered_set>
+
+#include <modules/core/perf_instr.h>
 
 class Module : public Log
 {
 public:
     Module( Module* parent, std::string name);
 
+    void static writeFile(std::string file)
+    {
+        if(file.length()) {
+
+            boost::property_tree::ptree array;
+            for (auto a : json_record)
+                array.push_back(std::make_pair("", a.second));
+
+            boost::property_tree::ptree write_data;
+            write_data.add_child("data", array);
+            boost::property_tree::write_json(file + ".json", write_data);
+        }
+    }
+
 protected:
+
+    template <typename FuncInstr>
+    void recordStage(const PerfInstr<FuncInstr> &instr, std::string description, Cycle cycle)
+    {
+            if(description == "Fetch")
+            {
+                boost::property_tree::ptree write_data;
+
+                write_data.put("type", "Record");
+                write_data.put("id", instr.get_sequence_id());
+                write_data.add("disassembly", instr.get_disasm());
+
+                json_record[instr.get_sequence_id()] = write_data;
+            }
+
+        boost::property_tree::ptree &pointer = json_record[instr.get_sequence_id()];
+        boost::property_tree::ptree stage_data;
+        stage_data.put("cycle", cycle);
+        stage_data.put("description", description);
+
+        boost::property_tree::ptree arr;
+
+        arr.push_back(boost::property_tree::ptree::value_type("", stage_data));
+
+        boost::optional<boost::property_tree::ptree &> child = pointer.get_child_optional("stages");
+        if (child)
+            child->push_back(boost::property_tree::ptree::value_type("", stage_data));
+        else
+            pointer.put_child("stages", arr);
+    }
     template<typename T>
     auto make_write_port( std::string key, uint32 bandwidth) 
     {
@@ -62,6 +112,7 @@ private:
     const std::string name;
     std::vector<std::unique_ptr<BasicWritePort>> write_ports;
     std::vector<std::unique_ptr<BasicReadPort>> read_ports;
+    static std::map<int, boost::property_tree::ptree> json_record;
 };
 
 class Root : public Module

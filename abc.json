@@ -1,0 +1,84 @@
+{
+    "data": [
+        {
+            "type": "Record",
+            "id": "0",
+            "disassembly": "c_addi $zero, 16",
+            "stages": [
+                {
+                    "cycle": "32",
+                    "description": "Fetch"
+                },
+                {
+                    "cycle": "33",
+                    "description": "Decode"
+                },
+                {
+                    "cycle": "34",
+                    "description": "Execute"
+                },
+                {
+                    "cycle": "35",
+                    "description": "Writeback"
+                }
+            ]
+        },
+        {
+            "type": "Record",
+            "id": "1",
+            "disassembly": "c_addi4spn $a1, $sp, 68",
+            "stages": [
+                {
+                    "cycle": "33",
+                    "description": "Fetch"
+                },
+                {
+                    "cycle": "34",
+                    "description": "Decode"
+                },
+                {
+                    "cycle": "35",
+                    "description": "Execute"
+                },
+                {
+                    "cycle": "36",
+                    "description": "Writeback"
+                }
+            ]
+        },
+        {
+            "type": "Record",
+            "id": "2",
+            "disassembly": "c_addi4spn $s1, $sp, 0",
+            "stages": [
+                {
+                    "cycle": "34",
+                    "description": "Fetch"
+                },
+                {
+                    "cycle": "35",
+                    "description": "Decode"
+                },
+                {
+                    "cycle": "36",
+                    "description": "Execute"
+                }
+            ]
+        },
+        {
+            "type": "Record",
+            "id": "3",
+            "disassembly": "unknown",
+            "stages": [
+                {
+                    "cycle": "35",
+                    "description": "Fetch"
+                },
+                {
+                    "cycle": "36",
+                    "description": "Decode"
+                }
+            ]
+        }
+    ]
+}

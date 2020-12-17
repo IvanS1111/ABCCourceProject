@@ -1,0 +1,1 @@
+cmd='cmake;-E;echo;Skipping configure step.'

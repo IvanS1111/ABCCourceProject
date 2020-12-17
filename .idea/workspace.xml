@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d9299e10-dc08-4c13-a595-636901edaf17" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/mipt-mips.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_12_20__13_26__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ninja_deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ninja_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Elf/Hello_world.elf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator/cmake-build-debug/mipt-mips.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator/elfio/src/elfio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator/elfio/src/elfio-stamp/elfio-gitclone-lastrun.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator/elfio/src/elfio-stamp/elfio-gitinfo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator/elfio/tmp/elfio-cfgcmd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator/elfio/tmp/elfio-cfgcmd.txt.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator/elfio/tmp/elfio-gitclone.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator/elfio/tmp/elfio-gitupdate.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/infra/config/main_wrapper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/infra/config/main_wrapper.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/infra/ports/module.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/infra/ports/module.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/infra/ports/module.h" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/infra/ports/module.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/modules/branch/branch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/modules/branch/branch.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/modules/decode/decode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/modules/decode/decode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/modules/execute/execute.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/modules/execute/execute.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/modules/fetch/fetch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/modules/fetch/fetch.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/modules/mem/mem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/modules/mem/mem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/modules/writeback/writeback.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/modules/writeback/writeback.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lIWzjfyBV8bOdeHotWC8EIprNI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9299e10-dc08-4c13-a595-636901edaf17" name="Default Changelist" comment="" />
+      <created>1607285349986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607285349986</updated>
+      <workItem from="1607285351296" duration="93000" />
+      <workItem from="1607286861788" duration="1613000" />
+      <workItem from="1607646310815" duration="5000" />
+      <workItem from="1608030364937" duration="599000" />
+      <workItem from="1608062886633" duration="1220000" />
+      <workItem from="1608128254050" duration="3111000" />
+      <workItem from="1608142117158" duration="5597000" />
+      <workItem from="1608149057599" duration="8891000" />
+      <workItem from="1608186706076" duration="3254000" />
+      <workItem from="1608190350265" duration="159000" />
+      <workItem from="1608195518077" duration="164000" />
+      <workItem from="1608197708421" duration="418000" />
+      <workItem from="1608199419461" duration="1225000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

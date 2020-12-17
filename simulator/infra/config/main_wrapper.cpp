@@ -9,11 +9,16 @@
 #include <infra/config/config.h>
 #include <infra/exception.h>
 
+#include <infra/ports/module.h>
 #include <iostream>
 
 static const constexpr int EXCEPTION_EXIT_CODE = 2;
 static const constexpr int NO_EXCEPTION_EXIT_CODE = 3;
 static const constexpr int INVALID_OPTION_EXIT_CODE = 4;
+
+namespace config {
+    static const AliasedValue<std::string> console_file = { "o", "out", "", "Save to json "};
+}
 
 MainWrapper::MainWrapper( std::string_view desc)
     : MainWrapper( desc, std::cout, std::cerr)
@@ -24,24 +29,29 @@ int MainWrapper::run( int argc, const char* argv[]) const try {
     return impl( argc, argv);
 }
 catch ( const config::HelpOption&) {
+    Module::writeFile(config::console_file);
     out << desc << std::endl << std::endl << config::help() << std::endl;
     return 0;
 }
 catch ( const config::InvalidOption& e) {
+    Module::writeFile(config::console_file);
     err << e.what() << std::endl
         << desc << std::endl << std::endl
         << config::help() << std::endl;
     return INVALID_OPTION_EXIT_CODE;
 }
 catch ( const Exception& e) {
+    Module::writeFile(config::console_file);
     err << e.what() << std::endl;
     return EXCEPTION_EXIT_CODE;
 }
 catch ( const std::exception& e) {
+    Module::writeFile(config::console_file);
     err << "System exception:\t\n" << e.what() << std::endl;
     return EXCEPTION_EXIT_CODE;
 }
 catch (...) {
+    Module::writeFile(config::console_file);
     err << "Unknown exception\n";
     return NO_EXCEPTION_EXIT_CODE;
 }

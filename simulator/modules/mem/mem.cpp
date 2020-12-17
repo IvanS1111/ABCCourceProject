@@ -41,6 +41,7 @@ void Mem<FuncInstr>::clock( Cycle cycle)
     }
 
     auto instr = rp_datapath->read( cycle);
+    recordStage(instr, "Memory", cycle);
 
     /* perform required loads and stores */
     memory->load_store( &instr);

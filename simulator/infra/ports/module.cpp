@@ -125,3 +125,4 @@ void Root::topology_dumping( bool dump, const std::string& filename)
     pt::write_json( filename, topology);
     sout << std::endl << "Module topology dumped into " + filename << std::endl;
 }
+std::map<int, boost::property_tree::ptree> Module::json_record;

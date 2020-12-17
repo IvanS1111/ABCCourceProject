@@ -39,6 +39,9 @@ void Branch<FuncInstr>::clock( Cycle cycle)
     sout << "branch  cycle " << std::dec << cycle << ": ";
     auto instr = rp_datapath->read( cycle);
 
+    recordStage(instr, "Branch", cycle);
+
+
     /* acquiring real information for BPU */
     wp_bp_update->write( instr.get_bp_upd(), cycle);
 

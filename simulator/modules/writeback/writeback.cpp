@@ -112,6 +112,7 @@ void Writeback<ISA>::writeback_instruction( const Writeback<ISA>::Instr& instr, 
 
     sout << instr << std::endl;
 
+    recordStage(instr, "Writeback", cycle);
     checker.check( instr);
     ++executed_instrs;
     last_writeback_cycle = cycle;
