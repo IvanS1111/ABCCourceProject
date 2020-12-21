@@ -28,49 +28,26 @@ public:
 
     void static writeFile(std::string file)
     {
-        if(file.length()) {
+        boost::property_tree::ptree arr;
+        if(file.length())
+        {
+            for(auto i : json_record)
+            {
+                for (auto j : i.second.get_child("stages"))
+                    arr.push_back(j);
+                for (auto j : i.second.get_child("records"))
+                    arr.push_back(j);
+                for (auto j : i.second.get_child("events"))
+                    arr.push_back(j);
 
-            boost::property_tree::ptree array;
-            for (auto a : json_record)
-                array.push_back(std::make_pair("", a.second));
-
-            boost::property_tree::ptree write_data;
-            write_data.add_child("data", array);
-            boost::property_tree::write_json(file + ".json", write_data);
+                boost::property_tree::ptree write_data;
+                write_data.add_child("", arr);
+                boost::property_tree::write_json(file + ".json", write_data, std::locale(), false);
+            }
         }
     }
 
 protected:
-
-    template <typename FuncInstr>
-    void recordStage(const PerfInstr<FuncInstr> &instr, std::string description, Cycle cycle)
-    {
-            if(description == "Fetch")
-            {
-                boost::property_tree::ptree write_data;
-
-                write_data.put("type", "Record");
-                write_data.put("id", instr.get_sequence_id());
-                write_data.add("disassembly", instr.get_mask());
-
-                json_record[instr.get_sequence_id()] = write_data;
-            }
-
-        boost::property_tree::ptree &pointer = json_record[instr.get_sequence_id()];
-        boost::property_tree::ptree stage_data;
-        stage_data.put("cycle", cycle);
-        stage_data.put("description", description);
-
-        boost::property_tree::ptree arr;
-
-        arr.push_back(boost::property_tree::ptree::value_type("", stage_data));
-
-        boost::optional<boost::property_tree::ptree &> child = pointer.get_child_optional("stages");
-        if (child)
-            child->push_back(boost::property_tree::ptree::value_type("", stage_data));
-        else
-            pointer.put_child("stages", arr);
-    }
     template<typename T>
     auto make_write_port( std::string key, uint32 bandwidth) 
     {
@@ -80,6 +57,7 @@ protected:
         return ptr;
     }
 
+
     template<typename T>
     auto make_read_port( std::string key, Latency latency)
     {
@@ -87,6 +65,60 @@ protected:
         auto ptr = port.get();
         read_ports.emplace_back( std::move( port));
         return ptr;
+    }
+    template <typename FuncInstr>
+    void recordStage(const PerfInstr<FuncInstr> &instr, std::string description, Cycle cycle)
+    {
+        boost::property_tree::ptree write, write_stage_vector, write_event_vector;
+        if(description == "Fetch")
+        {
+            boost::property_tree::ptree &pointer = json_record[instr.get_sequence_id()];
+            pointer.put_child("records", write);
+            pointer.put_child("stages", write_stage_vector);
+            pointer.put_child("events", write_event_vector);
+
+            write.put("type", "Record");
+            write.put("id", instr.get_sequence_id());
+            write.put("disassembly", instr.get_mask());
+
+            boost::optional<boost::property_tree::ptree &> child0 = pointer.get_child_optional("records");
+            child0 -> push_back(boost::property_tree::ptree::value_type("", write));
+
+        }
+
+
+        int id;
+        if(description == "Fetch")
+            id = 0;
+        else
+        if(description == "Decode")
+            id = 1;
+        else
+        if(description == "Execute")
+            id = 2;
+        else
+        if(description == "Memory")
+            id = 3;
+        else
+        if(description == "Writeback")
+            id = 4;
+
+        write_stage_vector.put("type", "Stage");
+        write_stage_vector.put("id", id);
+        write_stage_vector.put("description", description);
+
+        write_event_vector.put("type", "event");
+        write_event_vector.put("id", instr.get_sequence_id());
+        write_event_vector.put("cycle", cycle);
+        write_event_vector.put("stage", id);
+
+
+        boost::property_tree::ptree &pointer = json_record[instr.get_sequence_id()];
+        boost::optional<boost::property_tree::ptree &> child1 = pointer.get_child_optional("stages");
+        child1 -> push_back(boost::property_tree::ptree::value_type("", write_stage_vector));
+        boost::optional<boost::property_tree::ptree &> child2 = pointer.get_child_optional("events");
+        child2 -> push_back(boost::property_tree::ptree::value_type("", write_event_vector));
+
     }
 
     void enable_logging_impl( const std::unordered_set<std::string>& names);

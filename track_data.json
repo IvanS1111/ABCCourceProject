@@ -1,0 +1,180 @@
+{
+    "data": [
+        {
+            "type": "Record",
+            "id": "0",
+            "disassembly": "18446744073709551615",
+            "stages": [
+                {
+                    "cycle": "32",
+                    "description": "Fetch"
+                },
+                {
+                    "cycle": "33",
+                    "description": "Decode"
+                },
+                {
+                    "cycle": "34",
+                    "description": "Execute"
+                },
+                {
+                    "cycle": "35",
+                    "description": "Writeback"
+                }
+            ]
+        },
+        {
+            "type": "Record",
+            "id": "1",
+            "disassembly": "18446744073709551615",
+            "stages": [
+                {
+                    "cycle": "33",
+                    "description": "Fetch"
+                },
+                {
+                    "cycle": "34",
+                    "description": "Decode"
+                },
+                {
+                    "cycle": "35",
+                    "description": "Execute"
+                },
+                {
+                    "cycle": "36",
+                    "description": "Writeback"
+                }
+            ]
+        },
+        {
+            "type": "Record",
+            "id": "2",
+            "disassembly": "18446744073709551615",
+            "stages": [
+                {
+                    "cycle": "34",
+                    "description": "Fetch"
+                },
+                {
+                    "cycle": "35",
+                    "description": "Decode"
+                },
+                {
+                    "cycle": "36",
+                    "description": "Execute"
+                },
+                {
+                    "cycle": "37",
+                    "description": "Writeback"
+                }
+            ]
+        },
+        {
+            "type": "Record",
+            "id": "3",
+            "disassembly": "18446744073709551615",
+            "stages": [
+                {
+                    "cycle": "35",
+                    "description": "Fetch"
+                },
+                {
+                    "cycle": "36",
+                    "description": "Decode"
+                },
+                {
+                    "cycle": "37",
+                    "description": "Execute"
+                },
+                {
+                    "cycle": "38",
+                    "description": "Writeback"
+                }
+            ]
+        },
+        {
+            "type": "Record",
+            "id": "4",
+            "disassembly": "18446744073709551615",
+            "stages": [
+                {
+                    "cycle": "36",
+                    "description": "Fetch"
+                },
+                {
+                    "cycle": "37",
+                    "description": "Decode"
+                },
+                {
+                    "cycle": "38",
+                    "description": "Execute"
+                },
+                {
+                    "cycle": "39",
+                    "description": "Writeback"
+                }
+            ]
+        },
+        {
+            "type": "Record",
+            "id": "5",
+            "disassembly": "18446744073709551615",
+            "stages": [
+                {
+                    "cycle": "37",
+                    "description": "Fetch"
+                },
+                {
+                    "cycle": "38",
+                    "description": "Decode"
+                },
+                {
+                    "cycle": "39",
+                    "description": "Execute"
+                },
+                {
+                    "cycle": "40",
+                    "description": "Writeback"
+                }
+            ]
+        },
+        {
+            "type": "Record",
+            "id": "6",
+            "disassembly": "18446744073709551615",
+            "stages": [
+                {
+                    "cycle": "38",
+                    "description": "Fetch"
+                },
+                {
+                    "cycle": "39",
+                    "description": "Decode"
+                },
+                {
+                    "cycle": "40",
+                    "description": "Execute"
+                },
+                {
+                    "cycle": "41",
+                    "description": "Branch"
+                },
+                {
+                    "cycle": "42",
+                    "description": "Writeback"
+                }
+            ]
+        },
+        {
+            "type": "Record",
+            "id": "7",
+            "disassembly": "18446744073709551615",
+            "stages": [
+                {
+                    "cycle": "39",
+                    "description": "Fetch"
+                }
+            ]
+        }
+    ]
+}
